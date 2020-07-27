@@ -1,4 +1,5 @@
 // import functions and grab DOM elements
+console.log('landing-page');
 
 // initialize state
 
