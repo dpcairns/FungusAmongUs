@@ -53,7 +53,7 @@ function regionInfoReveal(e) {
             }
             eastRegion.classList.remove('hidden');
             break;
-    };
+    }
 }
 
 setPage();
