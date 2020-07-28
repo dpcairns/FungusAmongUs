@@ -1,3 +1,5 @@
+import { mushBasket } from '../common/utils';
+
 export function renderMush(mushroom) {
     const section = document.createElement('section');
     const image = document.createElement('img');
