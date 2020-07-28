@@ -1,18 +1,27 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import { mushBasket } from '../common/utils.js';
+import { BASKET } from '../common/constants.js';
 
 const test = QUnit.test;
+QUnit.module('Grab Basket');
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = false;
+test('Should return an object', (expect) => {
+    
+    const basket = {
+        color: 'red',
+        number: 3
+    };
+    
+
+    const stringyBasket = JSON.stringify(basket);
+    localStorage.setItem(BASKET, stringyBasket);
+
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = false;
+    const grabBasket = mushBasket();
+    const expected = basket;
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.deepEqual(grabBasket, expected);
 });
