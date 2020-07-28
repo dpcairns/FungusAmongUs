@@ -6,7 +6,14 @@ function setPage() {
         regionInputs[i] = regionLabels[i].children[0];
     }
 
-    console.log(regionInputs);
+    for (let i = 0; i < regionInputs.length; i++) {
+        regionInputs[i].addEventListener('click', regionInfoReveal);
+    }
+}
+
+function regionInfoReveal(e) {
+    const regionClicked = e.target.value;
+    return regionClicked;
 }
 
 setPage();
