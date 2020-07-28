@@ -54,7 +54,7 @@ export function renderMush(mushroom) {
         }
         const stringyBasket = JSON.stringify(basket);
         localStorage.setItem(BASKET, stringyBasket);
-    })
+    });
     section.append(addButton);
 
     return section;
