@@ -1,4 +1,4 @@
-import { BASKET } from './constants.js'
+import { BASKET } from './constants.js';
 
 export function newUser(formData) {
     return {
