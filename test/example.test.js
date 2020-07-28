@@ -1,4 +1,4 @@
-import { mushBasket } from '../common/utils.js';
+import { getMushBasket } from '../common/utils.js';
 import { BASKET } from '../common/constants.js';
 
 const test = QUnit.test;
@@ -18,7 +18,7 @@ test('Should return an object', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const grabBasket = mushBasket();
+    const grabBasket = getMushBasket();
     const expected = basket;
 
     //Expect
