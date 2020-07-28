@@ -11,4 +11,5 @@ form.addEventListener('submit', (e) => {
     
     const stringyUser = JSON.stringify(user);
     localStorage.setItem(USER, stringyUser);
+    window.location = './home/index.html'
 })
