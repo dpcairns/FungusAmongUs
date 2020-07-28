@@ -4,7 +4,8 @@ import { BASKET } from '../common/constants.js';
 export function renderMush(mushroom) {
     const section = document.createElement('section');
     const image = document.createElement('img');
-    image.src = '../assets/' + mushroom.image;
+    // image.src = '../assets/' + mushroom.image;
+    image.src = mushroom.image;
     section.append(image);
 
     const h1 = document.createElement('h1');
