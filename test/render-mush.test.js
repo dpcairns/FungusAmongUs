@@ -31,7 +31,7 @@ test('it should render a mushroom', (expect) => {
                 <h3>Edibility</h3>
                  <p id="edible-paragraph">Edibility details here.</p>
             </div>
-            <button>Collect This Mushroom</button>
+            <button value="mush2" >Collect This Mushroom</button>
         </section>`.replace(/\s/g, '');
  
     const actual = renderMush(mushroom);
