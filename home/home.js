@@ -16,7 +16,7 @@ function setPage() {
         regionInputs[i].addEventListener('click', regionInfoReveal);
     }
 }
-setPage();
+
 function regionInfoReveal(e) {
     const regionClicked = Number(e.target.value);
     
@@ -53,7 +53,7 @@ function regionInfoReveal(e) {
             }
             eastRegion.classList.remove('hidden');
             break;
-    }
-
-    console.log(allDivs)
+    };
 }
+
+setPage();
