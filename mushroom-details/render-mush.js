@@ -1,4 +1,5 @@
-import { mushBasket } from '../common/utils';
+import { getMushBasket, findById } from '../common/utils.js';
+import { BASKET } from '../common/constants.js';
 
 export function renderMush(mushroom) {
     const section = document.createElement('section');
@@ -38,6 +39,21 @@ export function renderMush(mushroom) {
 
     const addButton = document.createElement('button');
     addButton.textContent = 'Collect This Mushroom';
+    addButton.value = mushroom.id;
+    addButton.addEventListener('click', () => {
+        const basket = getMushBasket();
+        const mushInBasket = findById(basket, mushroom.id);
+        if (mushInBasket) {
+            alert('You already collected this mushroom.');
+        } else {
+            const newFavorite = {
+                id: mushroom.id
+            };
+            basket.push(newFavorite);
+        }
+        const stringyBasket = JSON.stringify(basket);
+        localStorage.setItem(BASKET, stringyBasket);
+    })
     section.append(addButton);
 
     return section;
