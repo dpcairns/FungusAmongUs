@@ -53,7 +53,7 @@ const mushData = [
         id: 'mush6',
         commonName: 'Lions Mane',
         scientificName: 'Hericium erinaceus',
-        image: 'lions-mane.jps',
+        image: 'lions-mane.jpg',
         description: 'Mushroom with one large clump of spines hanging like icicles from a tough, unbranched base. Spines 1-3" long when mature, white or yellowish. Growing on wood of hardwoods.',
         edibility: 'Excellent, with a texture reminiscent of seafood. It is grown commercially on a small scale and served in French restaurants under the name, pom pom du blanc.',
         region: 'Northwest Oregon, Central Oregon, Southwest Oregon'
@@ -63,7 +63,7 @@ const mushData = [
         id: 'mush7',
         commonName: 'Hedgehog Mushroom',
         scientificName: 'Hydnum repandum',
-        image: 'hedgehog-mushroom.jpeg',
+        image: 'hedgehog-mushroom.jpg',
         description: 'Cap and stalk white to pale orange or dull orange. Underside of cap with a layer of brittle spines or teeth, white to pale orange. Surface of cap bald (but may break up to form scales). Flesh white and brittle, not woody or leathery.',
         edibility: 'A popular edible. Many prefer it to the chanterelle, which it resembles in color and texture. When gathering it, be sure to keep spines free of dirt.',
         region: 'Coast, Northwest Oregon'
