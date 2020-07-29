@@ -1,3 +1,6 @@
+import { renderCoast, renderSW, renderNW, renderCentral, renderEastern } from '../common/utils.js';
+import { coastMush, swMush, nwMush, centralMush, eastMush } from '../common/constants.js';
+
 const coastRegion = document.querySelector('#coast');
 const swRegion = document.querySelector('#southwest');
 const nwRegion = document.querySelector('#northwest');
@@ -56,4 +59,59 @@ function regionInfoReveal(e) {
     }
 }
 
+for (let i = 0; i < coastMush.length; i++) {
+    const mushrooms = coastMush[i];
+    const domElement = renderCoast(mushrooms);
+
+    coastRegion.append(domElement);
+}
+
+for (let i = 0; i < swMush.length; i++) {
+    const mushrooms = swMush[i];
+    const domElement = renderSW(mushrooms);
+
+    swRegion.append(domElement);
+}
+
+for (let i = 0; i < nwMush.length; i++) {
+    const mushrooms = nwMush[i];
+    const domElement = renderNW(mushrooms);
+
+    nwRegion.append(domElement);
+}
+
+for (let i = 0; i < centralMush.length; i++) {
+    const mushrooms = centralMush[i];
+    const domElement = renderCentral(mushrooms);
+
+    centralRegion.append(domElement);
+}
+
+for (let i = 0; i < eastMush.length; i++) {
+    const mushrooms = eastMush[i];
+    const domElement = renderEastern(mushrooms);
+
+    eastRegion.append(domElement);
+}
+
+function setupMush() {
+    const mushLabels = document.querySelectorAll('.mush-radio');
+    let mushInputs = [];
+
+    for (let i = 0; i <= 4; i++) {
+        mushInputs[i] = mushLabels[i].children[1];
+    }
+
+    for (let i = 0; i < mushInputs.length; i++) {
+        mushInputs[i].addEventListener('click', toMushDetails);
+    }
+}
+
+function toMushDetails(e) {
+    const mushClicked = e.target.value;
+
+    return window.location = `../mushroom-details/?id=${mushClicked}`;
+}
+
 setPage();
+setupMush();
