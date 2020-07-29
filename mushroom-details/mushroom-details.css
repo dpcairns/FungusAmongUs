@@ -47,7 +47,7 @@ header {
 
 img {
     border: solid 3px var(--color4);
-    padding-top: 10px;
+    margin-top: 10px;
     height: 400px;
 }
 
@@ -126,6 +126,7 @@ h3 {
 }
 
 #edible-paragraph, p {
+    margin-top: -1px;
     padding-left: 55px;
     padding-right: 50px;
 }
@@ -138,5 +139,6 @@ button {
     padding-left: 10px;
     padding-right: 10px;
     font-family: 'Shrikhand';
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
