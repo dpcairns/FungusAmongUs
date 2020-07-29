@@ -97,8 +97,8 @@ for (let i = 0; i < eastMush.length; i++) {
 function setupMush() {
     const mushLabels = document.querySelectorAll('.mush-radio');
     let mushInputs = [];
-
-    for (let i = 0; i <= 4; i++) {
+    console.log(mushInputs);
+    for (let i = 0; i < mushLabels.length; i++) {
         mushInputs[i] = mushLabels[i].children[1];
     }
 
