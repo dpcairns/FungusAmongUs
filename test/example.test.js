@@ -33,8 +33,6 @@ test('Should return the name of and object when passed an id', (expect) => {
     const myId1 = 'mush1';
     
 
-    
-    
     //Act 
     // Call the function you're testing and set the result to a const
     const mushroom1 = findById(mushData, myId1);
