@@ -47,8 +47,7 @@ header {
 
 img {
     border: solid 3px var(--color4);
-    margin-top: 10px;
-    height: 400px;
+    padding-top: 10px;
 }
 
 #logo {
@@ -119,8 +118,7 @@ h3 {
 }
 
 #edibility-section {
-    display: flex;
-    flex-direction: column;
+    display: flex
     align-items: center;
     justify-content: center;
 }
@@ -129,6 +127,7 @@ h3 {
     padding-left: 55px;
     padding-right: 50px;
 }
+
 
 button {
     border-radius: 5px;
