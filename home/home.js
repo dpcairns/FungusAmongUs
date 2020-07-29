@@ -1,7 +1,5 @@
 import { renderCoast, renderSW, renderNW, renderCentral, renderEastern } from '../common/utils.js';
-import { coastMush, swMush, nwMush, centralMush, eastMush } from '../common/constants.js'
-
-console.log(coastMush);
+import { coastMush, swMush, nwMush, centralMush, eastMush } from '../common/constants.js';
 
 const coastRegion = document.querySelector('#coast');
 const swRegion = document.querySelector('#southwest');

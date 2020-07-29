@@ -41,7 +41,7 @@ export function renderCoast(mushroom) {
     
     const name = document.createElement('h4');
     name.textContent = mushroom.commonName;
-    label.append(name)
+    label.append(name);
     
     return label;
 }
@@ -61,7 +61,7 @@ export function renderSW(mushroom) {
     
     const name = document.createElement('h4');
     name.textContent = mushroom.commonName;
-    label.append(name)
+    label.append(name);
     
     return label;
 }
@@ -81,7 +81,7 @@ export function renderNW(mushroom) {
     
     const name = document.createElement('h4');
     name.textContent = mushroom.commonName;
-    label.append(name)
+    label.append(name);
     
     return label;
 }
@@ -101,7 +101,7 @@ export function renderCentral(mushroom) {
     
     const name = document.createElement('h4');
     name.textContent = mushroom.commonName;
-    label.append(name)
+    label.append(name);
     
     return label;
 }
@@ -121,7 +121,7 @@ export function renderEastern(mushroom) {
     
     const name = document.createElement('h4');
     name.textContent = mushroom.commonName;
-    label.append(name)
+    label.append(name);
     
     return label;
 }
