@@ -1,0 +1,42 @@
+img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+    
+}
+
+div {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: pink;
+    color: white;
+}
+
+p {
+    width: 70%;
+}
