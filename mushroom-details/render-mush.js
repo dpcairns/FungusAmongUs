@@ -47,7 +47,9 @@ export function renderMush(mushroom) {
             alert('You already collected this mushroom.');
         } else {
             const newFavorite = {
-                id: mushroom.id
+                id: mushroom.id,
+                commonName: mushroom.commonName,
+                image: mushroom.image
             };
             basket.push(newFavorite);
         }
