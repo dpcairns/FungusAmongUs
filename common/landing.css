@@ -65,7 +65,7 @@ section {
 }
 
 #description {
-    background-image: url("/assets/landingpage.jpg");
+    background-image: url("../assets/landingpage.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
