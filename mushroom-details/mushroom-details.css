@@ -48,6 +48,7 @@ header {
 img {
     border: solid 3px var(--color4);
     margin-top: 10px;
+    height: 400px;
 }
 
 #logo {
