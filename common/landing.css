@@ -68,8 +68,7 @@ section {
     background-image: url("../assets/landingpage.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
+    background-repeat: no-repeat; 
     height: 500px;
     margin-bottom: 5px;
     }
