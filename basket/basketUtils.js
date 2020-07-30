@@ -1,11 +1,9 @@
 import { getMushBasket } from '../common/utils.js';
 
-
 const basket = getMushBasket();
 const ul = document.querySelector('ul');
 
 export function renderBasket(basket) {
-
     
     const liEl = document.createElement('li');
 
@@ -30,3 +28,23 @@ for (let i = 0; i < basket.length; i++) {
 
     ul.append(ulEl);
 }
+
+function grabBasketInputs() {
+    const mushList = document.querySelectorAll('li');
+    let mushInputs = [];
+
+    for (let i = 0; i < mushList.length; i++) {
+        mushInputs[i] = mushList[i].children[2];
+    }
+
+    for (let i = 0; i < mushInputs.length; i++) {
+        mushInputs[i].addEventListener('click', basketToDetails);
+    }
+}
+
+function basketToDetails(e) {
+    const clicked = e.target.value;
+    return window.location = `../mushroom-details/?id=${clicked}`;
+}
+
+grabBasketInputs();
