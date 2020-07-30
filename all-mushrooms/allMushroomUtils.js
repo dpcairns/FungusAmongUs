@@ -1,9 +1,9 @@
 import dataMush from '../data/mushData.js';
 
-const mushSection = document.querySelector('#all-mush')
+const mushSection = document.querySelector('#all-mush');
 
 function renderAllMush(mushroom) {
-    const mushLabel = document.createElement('label')
+    const mushLabel = document.createElement('label');
 
     const mushImg = document.createElement('img');
     mushImg.src = '../assets/' + mushroom.image;
