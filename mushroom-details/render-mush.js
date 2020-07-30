@@ -38,9 +38,11 @@ export function renderMush(mushroom) {
     const buttonLabel = document.createElement('label');
     buttonLabel.classList.add('hidden');
     const buttonTextNew = document.createElement('p');
+    buttonTextNew.id = 'button-text';
     buttonTextNew.textContent = `You've successfully collected this mushroom!`;
     buttonTextNew.classList.add('hidden');
     const buttonTextOld = document.createElement('p');
+    buttonTextOld.id = 'button-text';
     buttonTextOld.textContent = 'You already have this mushroom in your basket.';
     buttonTextOld.classList.add('hidden');
 
