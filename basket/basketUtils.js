@@ -1,7 +1,9 @@
 import { getMushBasket } from '../common/utils.js';
+import { BASKET } from '../common/constants.js';
 
 const basket = getMushBasket();
 const ul = document.querySelector('ul');
+const resetButton = document.getElementById('reset-button');
 
 export function renderBasket(basket) {
     
@@ -30,6 +32,8 @@ for (let i = 0; i < basket.length; i++) {
     const basketMush = basket[i];
     const ulEl = renderBasket(basketMush);
 
+    resetButton.classList.remove('hidden');
+
     ul.append(ulEl);
 }
 
@@ -52,3 +56,14 @@ function basketToDetails(e) {
 }
 
 grabBasketInputs();
+
+function clearBasket() {
+    localStorage.removeItem(BASKET);
+}
+
+resetButton.addEventListener('click', () => {
+    clearBasket();
+    resetButton.classList.add('hidden');
+    window.location = './index.html';
+});
+
