@@ -35,7 +35,23 @@ export function renderMush(mushroom) {
     divp.textContent = mushroom.edibility;
     div.append(divp);
 
-    section.append(div);
+    const buttonLabel = document.createElement('label');
+    buttonLabel.classList.add('hidden');
+    const buttonTextNew = document.createElement('p');
+    buttonTextNew.textContent = `You've successfully collected this mushroom!`;
+    buttonTextNew.classList.add('hidden');
+    const buttonTextOld = document.createElement('p');
+    buttonTextOld.textContent = 'You already have this mushroom in your basket.';
+    buttonTextOld.classList.add('hidden');
+
+    const basketButton = document.createElement('button');
+    basketButton.id = 'basket-button';
+    basketButton.textContent = 'View Your Basket';
+
+    buttonLabel.append(buttonTextNew, buttonTextOld, basketButton);
+    
+
+    section.append(div, buttonLabel);
 
     const addButton = document.createElement('button');
     addButton.textContent = 'Collect This Mushroom';
@@ -44,7 +60,8 @@ export function renderMush(mushroom) {
         const basket = getMushBasket();
         const mushInBasket = findById(basket, mushroom.id);
         if (mushInBasket) {
-            alert('You already collected this mushroom.');
+            buttonTextOld.classList.remove('hidden');
+            buttonLabel.classList.remove('hidden');
         } else {
             const newFavorite = {
                 id: mushroom.id,
@@ -52,10 +69,18 @@ export function renderMush(mushroom) {
                 image: mushroom.image
             };
             basket.push(newFavorite);
+            buttonTextNew.classList.remove('hidden');
+            buttonLabel.classList.remove('hidden');
         }
         const stringyBasket = JSON.stringify(basket);
         localStorage.setItem(BASKET, stringyBasket);
+
     });
+
+    basketButton.addEventListener('click', () => {
+        window.location = '../basket/index.html';
+    });
+
     section.append(addButton);
 
     return section;

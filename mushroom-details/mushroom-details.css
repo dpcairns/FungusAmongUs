@@ -142,3 +142,18 @@ button {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+.hidden {
+    display: none;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#basket-button {
+    background-color: var(--color4);
+    width: 189px;
+}
