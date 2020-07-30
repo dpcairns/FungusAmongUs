@@ -101,6 +101,7 @@ main {
 section {
     background-color: var(--color2);
     width: 1000px;
+    min-width: 840px;
     max-width: 80%;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
@@ -128,6 +129,7 @@ section {
     text-align: center;
     grid-row: 6 / span 5;
     z-index: 1;
+    margin: 0;
 }
 
 .sw-region {
