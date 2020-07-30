@@ -1,0 +1,136 @@
+
+body {
+    --color1: hsla(74, 10%, 47%, 1);
+    --color2: hsla(0, 0%, 97%, 1);
+    --color3: hsla(24, 58%, 56%, 1);
+    --color4: hsla(0, 24%, 39%, 1);
+    --color5: hsla(0, 0%, 65%, 1);
+    
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--color3);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color2);
+    margin-bottom: 10px;
+    border: solid 1px var(--color4);
+}
+
+#header-h1, #logo-name, #logo-name1, #us {
+    font-family: 'Shrikhand';
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--color4);
+}
+
+#logo-name {
+    color: var(--color3);
+    margin-left: -16px;
+}
+
+#logo-name1 {
+    color: var(--color5);
+    margin-left: -6px;
+}
+
+#us {
+    color: var(--color5);
+    margin-left: -5px;
+    margin-right: 10px;
+}
+
+img {
+    height: 200px;
+    /* width: 200px; */
+    border: solid 3px var(--color4);
+    border-radius: 20%;
+    margin-top: 10px;
+}
+
+.mush-logo {
+    border: solid 3px var(--color4);
+    margin-top: 10px;
+    height: 100px;
+}
+
+input {
+    display: none;
+}
+
+h3 {
+    cursor: pointer;
+}
+
+#logo {
+    height: 25px;
+    padding-left: 4px;
+    padding-top: 0;
+    border: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px var(--color2);
+    background-color: var(--color1);
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    max-width: 80%;
+}
+
+.nav-links {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: var(--color2);
+    font-family: 'Nunito Sans';
+    font-size: .8rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: var(--color2);
+    width: 1000px;
+    max-width: 80%;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: solid 1px var(--color4)
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 10px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+label > img, h4, p {
+    cursor: pointer;
+}
