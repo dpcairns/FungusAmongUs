@@ -3,52 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./home.css">
     <title>FungusAmongUs</title>
 </head>
-<body>
-    <header>Ahh,,,,a header</header>
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="../all-mushrooms/index.html">All Mushrooms</a>
-            <a href="../basket/index.html">User's Mushroom Basket</a>
-            <a href="../about-us/index.html">The Fun-Guys</a>
-        </nav>
+<header>
+    <h1 id="header-h1">
+    <img id="logo" src="../assets/logo.png" /> 
+        FUNG
+        <span id="us">US</span>
+        <span id="logo-name">AMONG</span>
+        <span id="logo-name1">US</span>
+    </h1>
+</header>
+<nav>
+    <a class= "nav-links" href="./index.html">HOME</a>
+    <a class= "nav-links" href="../all-mushrooms/index.html">MUSHROOM INDEX</a>
+    <a class= "nav-links" href="../basket/index.html">MUSHROOM BASKET</a>
+    <a class= "nav-links" href="../about-us/index.html">THE FUN-GUYS</a>
+</nav>
 
     <main>
         <section id="map">
-            <label>
+            <img src="../assets/oregon.png" class="oregon"/>
+            <label class="coast-region">
                 <input value="0" type="radio" name="region">
                 <h3>Oregon Coast</h3>
             </label>
-            <label>
+            <label class="sw-region">
                 <input value="1" type="radio" name="region">
-                <h3>Southwestern Oregon</h3>
+                <h3>Southwest Oregon</h3>
             </label>
-            <label>
+            <label class="nw-region">
                 <input value="2" type="radio" name="region">
-                <h3>Northwestern Oregon</h3>
+                <h3>Northwest  Oregon</h3>
             </label>
-            <label>
+            <label class="central-region">
                 <input value="3" type="radio" name="region">
                 <h3>Central Oregon</h3>
             </label>
-            <label>
+            <label class="east-region">
                 <input value="4" type="radio" name="region">
                 <h3>Eastern Oregon</h3>
             </label>
         </section>
-        <section>
-            <div class="hidden" id="coast"></div>
+        <section class="hidden" id="region-reveal">
+            <div class="region-info hidden" id="coast"></div>
 
-            <div class="hidden" id="southwest"></div>
+            <div class="region-info hidden" id="southwest"></div>
 
-            <div class="hidden" id="northwest"></div>
+            <div class="region-info hidden" id="northwest"></div>
 
-            <div class="hidden" id="central"></div>
+            <div class="region-info hidden" id="central"></div>
             
-            <div class="hidden" id="east"></div>
+            <div class="region-info hidden" id="east"></div>
         </section>
     </main>
 </body>
