@@ -45,6 +45,7 @@ export function renderMush(mushroom) {
     buttonTextOld.classList.add('hidden');
 
     const basketButton = document.createElement('button');
+    basketButton.id = 'basket-button';
     basketButton.textContent = 'View Your Basket';
 
     buttonLabel.append(buttonTextNew, buttonTextOld, basketButton);

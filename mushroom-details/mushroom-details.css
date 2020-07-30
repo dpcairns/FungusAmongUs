@@ -146,3 +146,14 @@ button {
 .hidden {
     display: none;
 }
+
+label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#basket-button {
+    background-color: var(--color4);
+    width: 189px;
+}
