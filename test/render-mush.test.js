@@ -31,6 +31,11 @@ test('it should render a mushroom', (expect) => {
                 <h3>Edibility</h3>
                  <p id="edible-paragraph">Edibility details here.</p>
             </div>
+            <label class="hidden">
+                <p class="hidden">You\'ve successfully collected this mushroom!</p>
+                <p class="hidden">You already have this mushroom in your basket.</p>
+                <button id="basket-button">View Your Basket</button>
+            </label>
             <button value="mush2" >Collect This Mushroom</button>
         </section>`.replace(/\s/g, '');
  
