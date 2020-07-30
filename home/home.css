@@ -98,6 +98,8 @@ main {
     align-items: center;
 }
 
+/* comment */
+
 section {
     background-color: var(--color2);
     width: 1000px;
