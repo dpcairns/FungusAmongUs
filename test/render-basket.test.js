@@ -18,11 +18,15 @@ test('it should render a mushroom in the basket', (expect) => {
 
     const basket = getMushBasket();
 
-    const expected = `<li>
+    const expected = `
+    <li>
+    <label>
     <img src="../assets/morel-mushroom.jpg">
     <h4>Morel Mushroom</h4>
     <input type="radio" name="basket" value="mush9">
-    </li>`.replace(/\s/g, '');
+    </label>
+    </li>
+    `.replace(/\s/g, '');
  
     const actual = renderBasket(basket);
     expect.equal(actual.outerHTML.replace(/\s/g, ''), expected);

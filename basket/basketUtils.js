@@ -6,6 +6,8 @@ const ul = document.querySelector('ul');
 export function renderBasket(basket) {
     
     const liEl = document.createElement('li');
+    
+    const label = document.createElement('label');
 
     const img = document.createElement('img');
     img.src = '../assets/' + basket.image;
@@ -18,7 +20,9 @@ export function renderBasket(basket) {
     input.name = 'basket';
     input.value = basket.id;
 
-    liEl.append(img, h4, input);
+    label.append(img, h4, input);
+
+    liEl.append(label);
     return liEl;
 }
 
@@ -30,7 +34,7 @@ for (let i = 0; i < basket.length; i++) {
 }
 
 function grabBasketInputs() {
-    const mushList = document.querySelectorAll('li');
+    const mushList = document.querySelectorAll('label');
     let mushInputs = [];
 
     for (let i = 0; i < mushList.length; i++) {
