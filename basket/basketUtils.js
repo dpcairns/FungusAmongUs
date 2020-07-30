@@ -3,7 +3,7 @@ import { BASKET } from '../common/constants.js';
 
 const basket = getMushBasket();
 const ul = document.querySelector('ul');
-const resetButton = document.getElementById('reset-button');
+const resetButton = document.querySelector('#reset-button');
 
 export function renderBasket(basket) {
     
@@ -55,8 +55,6 @@ function basketToDetails(e) {
     return window.location = `../mushroom-details/?id=${clicked}`;
 }
 
-grabBasketInputs();
-
 function clearBasket() {
     localStorage.removeItem(BASKET);
 }
@@ -66,4 +64,7 @@ resetButton.addEventListener('click', () => {
     resetButton.classList.add('hidden');
     window.location = './index.html';
 });
+
+grabBasketInputs();
+
 
