@@ -20,6 +20,7 @@ header {
     background-color: var(--color2);
     margin-bottom: 10px;
     border: solid 1px var(--color4);
+    padding-bottom: 10px;
 }
 
 #header-h1, #logo-name, #logo-name1, #us {
@@ -55,7 +56,8 @@ header {
 }
 
 nav{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     border: solid 2px var(--color2);
@@ -68,8 +70,6 @@ nav{
 }
 
 .nav-links {
-    padding-right: 50px;
-    padding-left: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
     color: var(--color2);
@@ -77,6 +77,7 @@ nav{
     font-size: .8rem;
     font-weight: bolder;
     text-decoration: none;
+    text-align: center;
 }
 
 main {
@@ -97,12 +98,12 @@ section {
     max-width: 80%;
 }
 
-h1{
-    font-size: 1.5rem;
-    font-weight: bolder;
-    line-height: 0em;
+h1 {
+    margin-top: 15px;
+    font-size: 1.2rem;
     font-family: 'Shrikhand';
-    color: var(--color5);
+    color: var(--color4);
+    margin-bottom: -2px;
 }
 
 .about-us {
@@ -147,17 +148,22 @@ div > p {
     margin-inline-end: 30px;
 }
 
-section > h1 {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    letter-spacing: 2pt;
-}
-
 .fa {
     padding: 8px;
     text-decoration: none;
     border-radius: 50%;
     background-color: var(--color1);
     color: white;
+}
+
+footer {
+    margin-top: 15px;
+    font-size: .6rem;
+    font-weight: bolder;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color4)
 }
