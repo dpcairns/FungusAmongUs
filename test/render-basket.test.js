@@ -1,5 +1,4 @@
-import { renderBasket } from '../basket/basketUtils.js';
-import { getMushBasket } from '../common/utils.js';
+import { renderBasket, getMushBasket } from '../common/utils.js';
 
 const test = QUnit.test;
 

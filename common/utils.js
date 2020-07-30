@@ -125,3 +125,26 @@ export function renderEastern(mushroom) {
     
     return label;
 }
+
+export function renderBasket(basket) {
+    
+    const liEl = document.createElement('li');
+    
+    const label = document.createElement('label');
+
+    const img = document.createElement('img');
+    img.src = '../assets/' + basket.image;
+    
+    const h4 = document.createElement('h4');
+    h4.textContent = basket.commonName;
+
+    const input = document.createElement('input');
+    input.type = 'radio';
+    input.name = 'basket';
+    input.value = basket.id;
+
+    label.append(img, h4, input);
+
+    liEl.append(label);
+    return liEl;
+}

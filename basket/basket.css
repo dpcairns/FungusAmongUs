@@ -151,7 +151,6 @@ input[type=radio] {
     display: none;
 }
 
-/* 
-input:checked + img {
-    border: solid 2px var(--color3);
-} */
+.hidden {
+    display: none;
+}
