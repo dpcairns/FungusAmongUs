@@ -1,6 +1,7 @@
 import { renderCoast, renderSW, renderNW, renderCentral, renderEastern } from '../common/utils.js';
 import { coastMush, swMush, nwMush, centralMush, eastMush } from '../common/constants.js';
 
+const revealRegion = document.querySelector('#region-reveal');
 const coastRegion = document.querySelector('#coast');
 const swRegion = document.querySelector('#southwest');
 const nwRegion = document.querySelector('#northwest');
@@ -31,30 +32,35 @@ function regionInfoReveal(e) {
                 allDivs[i].classList.add('hidden');
             }
             coastRegion.classList.remove('hidden');
+            revealRegion.classList.remove('hidden');
             break;
         case 1:
             for (let i = 0; i < allDivs.length; i++) {
                 allDivs[i].classList.add('hidden');
             }
             swRegion.classList.remove('hidden');
+            revealRegion.classList.remove('hidden');
             break;
         case 2:
             for (let i = 0; i < allDivs.length; i++) {
                 allDivs[i].classList.add('hidden');
             }
             nwRegion.classList.remove('hidden');
+            revealRegion.classList.remove('hidden');
             break;
         case 3:
             for (let i = 0; i < allDivs.length; i++) {
                 allDivs[i].classList.add('hidden');
             }
             centralRegion.classList.remove('hidden');
+            revealRegion.classList.remove('hidden');
             break;
         case 4:
             for (let i = 0; i < allDivs.length; i++) {
                 allDivs[i].classList.add('hidden');
             }
             eastRegion.classList.remove('hidden');
+            revealRegion.classList.remove('hidden');
             break;
     }
 }
