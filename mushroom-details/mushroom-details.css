@@ -148,12 +148,16 @@ button {
 }
 
 label {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    text-align: center;
 }
 
 #basket-button {
     background-color: var(--color4);
     width: 189px;
+    
 }
+
+#button-text {
+    font-weight: bold;
+}
+
