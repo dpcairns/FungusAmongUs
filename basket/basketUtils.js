@@ -1,5 +1,6 @@
 import { getMushBasket, renderBasket } from '../common/utils.js';
 import { BASKET } from '../common/constants.js';
+import { USER } from '../common/constants.js';
 
 const basket = getMushBasket();
 const ul = document.querySelector('ul');
@@ -13,6 +14,13 @@ for (let i = 0; i < basket.length; i++) {
 
     ul.append(ulEl);
 }
+
+function displayUserName() {
+    const user = document.getElementById('user-name');
+    const userData = JSON.parse(localStorage.getItem(USER));
+    user.textContent = `${userData.name}`;
+}
+displayUserName();
 
 function grabBasketInputs() {
     const mushList = document.querySelectorAll('label');
