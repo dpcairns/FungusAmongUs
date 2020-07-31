@@ -19,7 +19,7 @@ header {
     margin-right: auto;
     background-color: var(--color2);
     margin-bottom: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-top: 10px;
     border: solid 1px var(--color4);
 }
@@ -49,7 +49,6 @@ header {
 
 img {
     height: 200px;
-    /* width: 200px; */
     border: solid 3px var(--color4);
     border-radius: 20%;
     margin-top: 10px;
@@ -108,12 +107,13 @@ main {
     align-items: center;
 }
 
-h1 {
+#index {
     margin-top: 15px;
     font-size: 1.2rem;
     font-family: 'Shrikhand';
     color: var(--color4);
     margin-bottom: -2px;
+    -webkit-text-stroke: .7px #ded0a8;
 }
 
 section {
