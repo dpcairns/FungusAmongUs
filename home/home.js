@@ -11,7 +11,7 @@ const userWelcome = document.querySelector('#welcome-user');
 
 const userData = JSON.parse(localStorage.getItem(USER));
 
-userWelcome.textContent = `Welcome ${userData.name}!`
+userWelcome.textContent = `Welcome ${userData.name}!`;
 
 function setPage() {
     const regionLabels = document.querySelectorAll('label');
