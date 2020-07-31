@@ -134,3 +134,11 @@ p {
 label > img, h4, p {
     cursor: pointer;
 }
+
+img {
+    transition: .35s;
+}
+
+img:hover {
+    opacity: .3;
+}
