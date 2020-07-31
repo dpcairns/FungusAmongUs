@@ -17,7 +17,7 @@ for (let i = 0; i < basket.length; i++) {
 
 function displayUserName() {
     const user = document.getElementById('user-name');
-    const userData = JSON.parse(localStorage.git agetItem(USER));
+    const userData = JSON.parse(localStorage.getItem(USER));
     user.textContent = `${userData.name}`;
 }
 displayUserName();
