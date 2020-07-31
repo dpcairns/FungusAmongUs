@@ -19,6 +19,8 @@ header {
     margin-right: auto;
     background-color: var(--color2);
     margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
     border: solid 1px var(--color4);
 }
 
@@ -126,7 +128,8 @@ section {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    border: solid 1px var(--color4)
+    border: solid 1px var(--color4);
+    border-radius: 5px;
 }
 
 h4 {

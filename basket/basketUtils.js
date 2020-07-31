@@ -18,7 +18,7 @@ for (let i = 0; i < basket.length; i++) {
 function displayUserName() {
     const user = document.getElementById('user-name');
     const userData = JSON.parse(localStorage.getItem(USER));
-    user.textContent = `${userData.name}`;
+    user.textContent = `${userData.name}'s Mushroom Basket`;
 }
 displayUserName();
 
