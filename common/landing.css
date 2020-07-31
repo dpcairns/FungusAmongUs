@@ -61,7 +61,8 @@ section {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    border: solid 2px var(--color4)
+    border: solid 2px var(--color4);
+    border-radius: 20px;
 }
 
 #description {
@@ -88,6 +89,7 @@ section {
     padding: 10px;
     color: black;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 #form{
