@@ -20,7 +20,6 @@ header {
     background-color: var(--color2);
     margin-bottom: 10px;
     border: solid 1px var(--color4);
-    padding-bottom: 10px;
 }
 
 #header-h1, #logo-name, #logo-name1, #us {
@@ -96,14 +95,16 @@ section {
     border: solid 1px var(--color4);
     width: 1000px;
     max-width: 80%;
+    border-radius: 5px;
 }
 
-h1 {
+#meet-us {
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: 'Shrikhand';
     color: var(--color4);
     margin-bottom: -2px;
+    -webkit-text-stroke: .4px #ded0a8;
 }
 
 .about-us {
