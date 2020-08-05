@@ -23,6 +23,7 @@ function renderAllMush(mushroom) {
     return mushLabel;
 }
 
+// seems strange to me to have this for loop in global scope in a utils file
 for (let i = 0; i < dataMush.length; i++) {
     const mushArr = dataMush[i];
     const renderAll = renderAllMush(mushArr);
@@ -30,6 +31,7 @@ for (let i = 0; i < dataMush.length; i++) {
     mushSection.append(renderAll);
 }
 
+// nicely done! very cool function
 function grabAllInputs() {
     const mushList = document.querySelectorAll('label');
     let mushInputs = [];
@@ -38,6 +40,7 @@ function grabAllInputs() {
         mushInputs[i] = mushList[i].children[3];
     }
 
+    // very clean way to add event listeners
     for (let i = 0; i < mushInputs.length; i++) {
         mushInputs[i].addEventListener('click', showMeTheDetails);
     }
@@ -48,5 +51,5 @@ function showMeTheDetails(e) {
     return window.location = `../mushroom-details/?id=${clicked}`;
 }
 
-
+// according to the filename, it seems to me this call should be in a file called in a 'allMushrooms.js', so that this file can be all util definitions
 grabAllInputs();

@@ -56,6 +56,8 @@ function regionInfoReveal(e) {
     }
 }
 
+// hmmm, I wonder if you could have written a function to reduce the repition in these for loops. the all look about the same
+
 for (let i = 0; i < coastMush.length; i++) {
     const mushrooms = coastMush[i];
     const domElement = renderCoast(mushrooms);

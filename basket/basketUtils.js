@@ -22,6 +22,8 @@ function displayUserName() {
 }
 displayUserName();
 
+
+// this seems similar to your other "grab input" functions. I wonder if you could have made a function reusable in bother cases, that took the differences in as arguments
 function grabBasketInputs() {
     const mushList = document.querySelectorAll('label');
     let mushInputs = [];

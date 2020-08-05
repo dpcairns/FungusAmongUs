@@ -1,8 +1,13 @@
 import mushData from '../data/mushData.js';
 
+// nice use of constants for your magic strings!
 export const USER = 'USER';
 
 export const BASKET = 'BASKET';
+
+// This is a good solution, but I want to point out some alternatives. Seems like you could just store the indicies of these arrays here, or maybe add a "regions" array to all mushrooms with a list of the regions they belong to.
+
+// also, these regionMush variables probably belong in a different file, since they are not exactly 'constants' like the two strings above
 
 export const coastMush = [mushData[0], mushData[1], mushData[2], mushData[3], mushData[4], mushData[6], mushData[9], mushData[11], mushData[12], mushData[15], mushData[16], mushData[18], mushData[19]];
 
